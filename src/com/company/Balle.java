@@ -33,8 +33,7 @@ public class Balle {
                 this.deltaY *= -1;
             }
         }
-        this.rectangle.x += deltaX;
-        this.rectangle.y += deltaY;
+        rectangle.setLocation(rectangle.x + deltaX, rectangle.y + deltaY);
     }
 
     public Rectangle getRectangle() {

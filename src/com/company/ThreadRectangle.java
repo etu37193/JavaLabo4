@@ -10,9 +10,10 @@ public class ThreadRectangle extends Thread {
     public void run(){
         while(true){
             try{
+                Thread.sleep(25);
                 billard.getBalle().bouge();
                 billard.repaint();
-                Thread.sleep(10);
+
             } catch (InterruptedException exception){
                 exception.printStackTrace();
             }
